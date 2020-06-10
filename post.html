@@ -19,7 +19,7 @@
         padding : 0 100px;
       }
       .logoDiv {
-        margin : 13px 23px;
+        margin : 3px 13px;
         float : left;
       }
       .headtitleDiv {
@@ -113,8 +113,7 @@
         position: relative;
         height: 31px;
         padding: 12px 13px 0;
-        border-top: 1px solid #e1e1e1;
-        border-bottom: 1px solid #e1e1e1;
+        border: 1px solid #e1e1e1;1px solid #e1e1e1;
       }
       .inp_title {
         margin : 0;
@@ -134,6 +133,7 @@
         clear: both;
         overflow: hidden;
         padding-bottom: 5px;
+        border: 1px solid #e1e1e1;1px solid #e1e1e1;
       }
       .box_write {
         background-color: initial;
@@ -150,6 +150,20 @@
         font-size : 16px;
         line-height: 26px;
         color: #222;
+      }
+      .file_set {
+        display: block;
+        overflow: hidden;
+        min-height: 29px;
+        padding: 8px 16px 0 0;
+        border-top: 1px solid #ededed;
+      }
+      .attach_btn {
+        display: inline-block;
+        position: relative;
+        height: 20px;
+        padding-right: 8px;
+        vertical-align: middle;
       }
       a {
         color : black;
@@ -198,7 +212,7 @@
       <div class="headpadding">
         <div class="logoDiv">
           <a href="stem.html">
-            <img src="CAC_logo.jpg" href="/stem.html/" width="80px" height="80px">
+            <img src="CAC_logo.jpg" href="/stem.html/" width="100px" height="100px">
           </a>
         </div>
         <div class="headtitleDiv">
@@ -228,6 +242,11 @@
                   <span class="box_write">
                     <textarea name="content" class="tf_write" title="content" tabindex="2" placeholder=Questions spellcheck="false"></textarea>
                   </span>
+                </div>
+                <div class="file_set">
+                  <div class="attach_btn" title="Attach files">
+                    <input name="file" type="file" id="myFile">
+                  </div>
                 </div>
               </form>
             </fieldset>
