@@ -97,15 +97,15 @@
         padding : 0;
         border : 0;
       }
-      .searchboard {
-        position: relative;
-        height: auto;
-        margin-top: 32px;
-        overflow: hidden;
+      .boardtop {
+        margin-bottom: 20px;
+        height : 29px;
       }
       .searchboxboard {
-        margin-bottom: 20px;
         float : right;
+      }
+      .postboard {
+        float : left;
       }
       .searchbox {
         width : 200px;
@@ -118,6 +118,24 @@
         color: #8D8C8C;
       }
       .searchbutton {
+        width: 78px;
+        height: 29px;
+        background: green;
+        min-width: 80px;
+        padding: 5px 15px;
+        text-align: center;
+        line-height: 19px;
+        border: 0;
+        box-sizing: border-box;
+        vertical-align: middle;
+        font-family: "Times";
+        font-size : 15px;
+        color : white;
+        font-style: normal;
+        font-variant: normal;
+        cursor : pointer;
+      }
+      .postbutton {
         width: 78px;
         height: 29px;
         background: green;
@@ -184,11 +202,18 @@
       <div class="mainbody">
         <h2 class="maintitle"> IB Math Q&A </h2>
         <div class="boardarea">
-          <div class="searchboxboard">
-            <fieldset>
-              <input type=“text” id=“searchWord” title=“Search” class="searchbox" value onkeydown=“if(event.keyCode == 13) {Search();}”>
-              <button class="searchbutton" onclick=“Search();”>Search</button>
-            </fieldset>
+          <div class="boardtop">
+            <div class="postboard">
+              <form action="post.html" method="get">
+                <button class="postbutton" type="submit">Post</button>
+              </form>
+            </div>
+            <div class="searchboxboard">
+              <fieldset>
+                <input type=“text” id=“searchWord” title=“Search” class="searchbox" value onkeydown=“if(event.keyCode == 13) {Search();}”>
+                <button class="searchbutton" onclick=“Search();”>Search</button>
+              </fieldset>
+            </div>
           </div>
           <table class="tableDiv">
             <colgroup>
